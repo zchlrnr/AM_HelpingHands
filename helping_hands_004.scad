@@ -65,7 +65,7 @@ module slits(){
 module nut_body(){
     difference(){
         translate([0,0,h_ball_shank+(D_shank-d_ball_shank)+(thread_height/2)+(pitch/3)]){
-            linear_extrude(height=(thread_height/3),center=true,scale=1.0,$fn=fn){
+            linear_extrude(height=(thread_height/2.25),center=true,scale=1.0,$fn=fn){
                 circle(d=D_minor*2,$fn=6);
             };
         };
